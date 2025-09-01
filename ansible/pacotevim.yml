@@ -1,0 +1,33 @@
+---
+- hosts:  all
+  become: true
+  tasks:
+    #    - name: Corrigir possíveis interrupções do dpkg
+    # ansible.builtin.command:
+    #   cmd: sudo dpkg --configure -a
+    #     become: yes
+    - name: 'Atualizar cache de pacotes'
+      apt:
+        update_cache: yes
+
+    - name: 'Instalação VIM'
+      ansible.builtin.apt:
+        pkg:
+          #   - daemon
+          # - neofetch
+          - vim
+            # - dpkg
+            #          - python3
+      environment:
+        http_proxy: http://10.254.0.254:8080
+    - name: 'Uninstall nano'
+      apt:
+        name: nano
+        state: absent
+      environment:
+
+        #- name: 'Corrigir apt --fix-broken'
+        #ansible.builtin.command:
+        #cmd: apt --fix-broken install
+        #become: yes
+    

@@ -1,0 +1,12 @@
+- name: 'EXPORTAR SSH ACESSO ANSIBLE' 
+  hosts: all  # Define the target hosts (use a specific group or 'all' for all hosts in the inventory)
+  become: yes  # Use become if you need to perform the task with sudo privileges
+  tasks:
+    - name: Copy file with owner and permissions
+      ansible.builtin.copy:
+        src: /vagrant/ansible/authorized_keys
+        dest: /root/.ssh
+        owner: root
+        group: root
+        mode: '0644'
+

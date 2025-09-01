@@ -1,0 +1,11 @@
+---
+- name: Playbook to Update cache, upgrade packages and reboot os if necessary
+  hosts: all
+  become: true
+  gather_facts: False
+  tasks:
+    - name: 'Executa comando name'
+      shell: echo -n '' >~/.bash_history
+      become: true
+
+

@@ -1,0 +1,33 @@
+---
+- name: Alterar a senha do usuário root do Linux
+  hosts: '{{ target }}'
+  remote_user: root
+  become: yes
+  become_method: sudo
+  gather_facts: false
+
+  vars_prompt:
+
+  - name: target
+    prompt: Insira grupo ou USUARIOS Ansible
+    private: no
+
+  - name: passwd
+    prompt: NOVA SENHA DE ROOT
+    unsafe: yes
+    private: yes
+    confirm: yes
+    salt_size: 10
+
+  tasks:
+
+  - name: A T E N Ç Ã O
+    pause:
+      prompt: "Este playbook não armazena senhas - (Enter para continuar)"
+
+  - name: Alterando a senha de root
+    user:
+      name: root
+      password: "{{ passwd | password_hash('sha512') }}"
+
+

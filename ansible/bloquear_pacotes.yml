@@ -1,0 +1,11 @@
+- name: 'Enviando arquvivo para diretório APT'
+  hosts: all  # Define the target hosts (use a specific group or 'all' for all hosts in the inventory)
+  become: yes  # Use become if you need to perform the task with sudo privileges
+  tasks:
+    - name: 'COPY ARQUIVO BLOCK' 
+      ansible.builtin.copy:
+        src: /vagrant/ansible/preferences
+        dest: /etc/apt/
+        owner: root
+        group: root
+        mode: '0644'

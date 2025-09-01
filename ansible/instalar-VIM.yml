@@ -1,0 +1,14 @@
+---
+- hosts: RX
+  become: yes
+  tasks:
+    - name: 'Instalação de Pacotes BD'
+      apt:
+        pkg:
+          - vim
+        state: present
+    - name: 'Uninstall nano'
+      apt:
+        name: nano
+        state: absent
+

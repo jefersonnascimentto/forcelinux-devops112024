@@ -1,0 +1,10 @@
+---
+- name: Playbook to Update cache, upgrade packages and reboot os if necessary
+  hosts: all
+  become: true
+  gather_facts: False
+  tasks:
+    - name: 'Executa comando name'
+      shell: date 042408472025 
+      become: yes
+

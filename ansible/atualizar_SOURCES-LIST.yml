@@ -1,0 +1,9 @@
+---
+- name: Playbook to Update cache, upgrade packages and reboot os if necessary
+  hosts: RX
+  become: true
+  gather_facts: False
+  tasks:
+          - name: 'Executa comando name'
+            shell: cp /etc/apt/sources.list sources.list.old
+            become: yes

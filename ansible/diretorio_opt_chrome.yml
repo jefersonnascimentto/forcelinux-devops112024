@@ -1,0 +1,17 @@
+---
+- name: Create a directory on the remote server
+  hosts: all  # Define the target hosts (use a specific group or 'all' for all hosts in the inventory)
+  become: yes  # Use become if you need to perform the task with sudo privileges
+  tasks:
+    - name: Ensure the directory /path/to/directory exists
+      file:
+        path: /etc/opt/chrome/policies/managed  # The path of the directory to create
+        state: directory
+        mode: '0755'  # Optional: set the permissions for the directory
+    - name: Copy file with owner and permissions
+      ansible.builtin.copy:
+        src: /vagrant/ansible/incognito-policy.json
+        dest: /etc/opt/chrome/policies/managed/
+        owner: root
+        group: root
+        mode: '0644'

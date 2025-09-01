@@ -1,0 +1,12 @@
+---
+- name: exportar keys ssh
+  hosts: RAIOX
+  become: true
+  tasks:
+    - name: Copy file with owner and permissions
+      ansible.builtin.copy:
+        src: /vagrant/ansible/incognito-policy.json
+        dest: /etc/opt/chrome/policies/managed/
+        owner: root
+        group: root 
+        mode: '0644'

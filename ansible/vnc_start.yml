@@ -1,0 +1,13 @@
+---
+- name: Playbook to Update cache, upgrade packages and reboot os if necessary
+  hosts: INTERNACAO
+  become: true
+  gather_facts: False
+  tasks:
+    - name: 'start VNC'
+      service:
+        name: vncserver-x11
+        state: started
+        enable: yes 
+       
+

@@ -1,0 +1,18 @@
+---
+- hosts:  all
+  become: true
+  tasks:
+    - name: 'Uninstall nano'
+      apt:
+        name: nano
+        state: absent
+
+    - name: Install dependencias 
+      ansible.builtin.apt:
+        pkg: 
+          - vim
+        state: latest
+      become: true
+      environment:
+       http_proxy: http://10.254.0.254:8080
+

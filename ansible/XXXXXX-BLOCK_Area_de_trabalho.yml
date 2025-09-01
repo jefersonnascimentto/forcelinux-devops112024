@@ -1,0 +1,9 @@
+---
+    - hosts: all
+      become: yes
+      tasks:
+        - name: Bloquear a área de trabalho
+          shell: chown -R enfermagem.enfermagem /home # Substitua pelo comando correto para o seu ambiente
+          args:
+            executable: /bin/bash
+          ignore_errors: yes

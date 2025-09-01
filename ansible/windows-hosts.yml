@@ -1,0 +1,75 @@
+[WINDOWS]
+
+[REFEITORIO]
+192.168.1.71 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"  
+
+[FINCANCEIRO]
+192.168.1.120 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[MANUTENCAO]
+192.168.1.40 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.39 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[RH]
+192.168.1.170 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.122 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.16 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.4 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.54 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.70 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.95 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[SAME]
+192.168.1.193 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.219 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.35 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.68 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.9 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.130 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.93 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.98 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.0.245 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+
+[FATURAMENTO]
+192.168.2.44 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[CONTABILIDADE]
+192.168.0.163 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.45 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.66 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.26 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[ADM]
+192.168.0.229 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.0.230 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.30 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.81 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.123 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.14 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[CAPTA_RECURSOS]
+192.168.0.169 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.119 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+
+[ENDOSCOPIA]
+192.168.1.2 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.1.72 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.178 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[UTIPEDIATRICA]
+191.168.1.20 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[CAF]
+191.168.1.176 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[LABORATORIO]
+192.168.2.10 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+[RADIOTERAPIA]
+192.168.2.148 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+192.168.2.10 ansible_user=root ansible_ssh_private_key_file="/home/vagrant/.ssh/id_rsa"
+
+
+

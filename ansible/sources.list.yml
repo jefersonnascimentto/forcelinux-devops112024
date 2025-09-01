@@ -1,0 +1,18 @@
+---
+- name: 'roca de sources list'
+  hosts: 192.168.2.74 # hosts (use a specific group or 'all' for all hosts in the inventory)
+  become: yes  # Use become if you need to perform the task with sudo privileges
+  tasks:
+    - name: Add specified repository into sources list
+      ansible.builtin.apt_repository:
+        repo: 
+          deb http://deb.debian.org/debian bookworm main non-free-firmware
+          deb-src http://deb.debian.org/debian bookworm main non-free-firmware
+
+          deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+          deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+
+          deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
+          deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+        state: present
+
